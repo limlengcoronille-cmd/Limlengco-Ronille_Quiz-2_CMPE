@@ -17,38 +17,29 @@ while True:
         if operator == "+":
             sum = float(num1) + float(num2)
             print(sum)
-        else:
-            print("Invalid Input, please try again")
         
-        if operator == "-":
+        elif operator == "-":
             difference = float(num1) - float(num2)
             print(difference)
-        else:
-            print("Invalid Input, please try again")
-        
-        if operator == "*":
+           
+        elif operator == "*":
             product = float(num1) * float(num2)
             print(product)
-        else:
-            print("Invalid Input, please try again")
-        
-        if operator == "/":
+       
+        elif operator == "/":
             quotient = float(num1) / float(num2)
             print(quotient)
-        else:
-            print("Invalid Input, please try again")
         
-        if operator == "sqr":
+        elif operator == "sqr":
             sqr = float(num1)  ** 0.5
             print(sqr)
-        else:
-            print("Invalid Input, please try again")
         
-        if operator == "r":
+        elif operator == "r":
             r = float(num1) % float(num2)
             print(r)
+            
         else:
-            print("Invalid Input, please try again")
+            print("Invalid I nput, please try again")
             
     except ValueError:
             print("Invalid Input, please try again")
