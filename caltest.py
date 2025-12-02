@@ -1,6 +1,6 @@
 print("Welcome to my Calculator")
 print("This is just a simple Calculator but please still enjoy")
-print("This is made by Ronille E. Limlengco")
+print("This is made by Ronille E. Limlengco") 
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 valid_operator = ["+", "-", "*", "/", "sqr""", "r"]
 while True:
