@@ -1,40 +1,54 @@
 print("Welcome to my Calculator")
-print("This is made by Ronille E. Limlengco")
-
+print("This is just a simple Calculator but please still enjoy")
+print("This is made by Ronille E. Limlengco") 
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+valid_operator = ["+", "-", "*", "/", "sqr""", "r"]
 while True:
     try:
         num1 = float(input("Input 1st number:"))
-        operator = input("Select an Operator (+, -, *, /, sqr, r)")
-        
+        operator = input("Select an Operator (+, -, *, /, sqr, r):")
+        if operator not in valid_operator:
+           print("Invalid Operator, please try again")
+           continue
+
         if operator != "sqr":
             num2 = float(input("Input 2nd number:"))
 
         if operator == "+":
             sum = float(num1) + float(num2)
             print(sum)
-            
-        elif operator == "-":
+        else:
+            print("Invalid Input, please try again")
+        
+        if operator == "-":
             difference = float(num1) - float(num2)
             print(difference)
-
-        elif operator == "*":
+        else:
+            print("Invalid Input, please try again")
+        
+        if operator == "*":
             product = float(num1) * float(num2)
             print(product)
-            
-        elif operator == "/":
+        else:
+            print("Invalid Input, please try again")
+        
+        if operator == "/":
             quotient = float(num1) / float(num2)
             print(quotient)
-
-        elif operator == "sqr":
+        else:
+            print("Invalid Input, please try again")
+        
+        if operator == "sqr":
             sqr = float(num1)  ** 0.5
             print(sqr)
-
-        elif operator == "r":
+        else:
+            print("Invalid Input, please try again")
+        
+        if operator == "r":
             r = float(num1) % float(num2)
             print(r)
-
         else:
-            print("Invalid Input, please to try again")
+            print("Invalid Input, please try again")
             
     except ValueError:
             print("Invalid Input, please try again")
