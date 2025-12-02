@@ -37,9 +37,9 @@ while True:
         elif operator == "r":
             r = float(num1) % float(num2)
             print(r)
-            
+
         else:
-            print("Invalid I nput, please try again")
+            print("Invalid Input, please try again")
             
     except ValueError:
             print("Invalid Input, please try again")
